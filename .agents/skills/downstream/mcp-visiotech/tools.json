@@ -1,0 +1,56 @@
+[
+  {
+    "action_name": "visiotech__search_visiotech_products",
+    "description": "Búsqueda rápida de productos en el catálogo de Visiotech Security vía motor Algolia.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "query": { "type": "string" },
+        "page": { "type": "integer", "default": 1 },
+        "limit": { "type": "integer", "default": 20 }
+      },
+      "required": ["query"]
+    }
+  },
+  {
+    "action_name": "visiotech__get_visiotech_product",
+    "description": "Consulta de ficha técnica, PVP oficial, precio neto de instalador y stock en Visiotech.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sku": { "type": "string" }
+      },
+      "required": ["sku"]
+    }
+  },
+  {
+    "action_name": "visiotech__list_visiotech_invoices",
+    "description": "Lista facturas emitidas por Visiotech Security (admite two_factor_code opcional).",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "two_factor_code": { "type": "string" }
+      }
+    }
+  },
+  {
+    "action_name": "visiotech__list_visiotech_orders",
+    "description": "Historial de pedidos de compra en Visiotech Security (admite two_factor_code opcional).",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "two_factor_code": { "type": "string" }
+      }
+    }
+  },
+  {
+    "action_name": "visiotech__get_visiotech_account_profile",
+    "description": "Consulta de perfil de cuenta y condiciones comerciales en Visiotech Security.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "two_factor_code": { "type": "string" }
+      }
+    }
+  }
+]
