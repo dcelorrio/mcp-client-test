@@ -14,13 +14,15 @@
   },
   {
     "action_name": "visiotech__get_visiotech_product",
-    "description": "Consulta de ficha técnica, PVP oficial, precio neto de instalador y stock en Visiotech.",
+    "description": "Consulta precio neto instalador, PVP, existencias y detalles técnicos de un producto o SKU específico en Visiotech. Acepta 'two_factor_code' opcional si el sistema requiere verificación 2FA.",
     "input_schema": {
       "type": "object",
       "properties": {
-        "sku": { "type": "string" }
+        "sku": { "type": "string" },
+        "two_factor_code": { "type": ["string", "null"], "default": null }
       },
-      "required": ["sku"]
+      "required": ["sku"],
+      "additionalProperties": false
     }
   },
   {
