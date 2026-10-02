@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-10-02T21:06:30Z
+updated_at: 2026-10-02T22:11:00Z
 source_downstream: mcp-db-beta10
 ---
 
@@ -21,7 +21,10 @@ source_downstream: mcp-db-beta10
 - **`SATYA.EMPLEADO`**: `IDEMPLEADO`, `NOMBRE_Y_APELLIDO`, `ESTADO`.
   - *Técnicos clave*: 216=Andrés Méndez Fernández, 233=Víctor Tenas Jiménez.
 - **`SATYA.TIEMPO_TRABAJADO`**: `IDTIEMPO_TRABAJADO`, `IDPARTE_MONTAJE`, `IDEMPLEADO`, `FINICIO`, `FFIN`, `HORAS`, `ES_DESPLAZAMIENTO`, `ESTADO`. (Tabla oficial de imputación de horas de mano de obra y desplazamientos en partes de trabajo).
-- **`SATYA.SISTEMA_MANT`**: `IDSISTEMA_MANT`, `IDSISTEMA`, `IDTACTUACION`, `IDTSUBSIS`, `DURACION_ESTIMADA` (en minutos), `ESTADO`. (Ficha de preventivo del sistema).
+- **`SATYA.ORDEN_TRABAJO`**: `IDORDEN_TRABAJO`, `NORDEN_TRABAJO`, `IDCLIENTE`, `IDSISTEMA`, `IDTACTUACION_TSISTEMA`, `DURACION_ESTIMADA` (horas; en preventivos suele venir a 0 por defecto), `ESTADO`.
+- **`SATYA.ORDEN_TRABAJO_MANT`**: `IDORDEN_TRABAJO_MANT`, `IDORDEN_TRABAJO`, `IDSISTEMA_MANT`. (Tabla pivote vinculante entre la OT generada y las revisiones contratadas del sistema).
+- **`SATYA.SISTEMA_MANT`**: `IDSISTEMA_MANT`, `IDSISTEMA`, `IDTACTUACION`, `IDTSUBSIS`, `DURACION_ESTIMADA` (en minutos; tiempo teórico de referencia contractual), `ESTADO`.
+- **`SATYA.TACTUACION`**: `IDTACTUACION`, `DESCRIPCION`, `TIPO` (1=Instalación/Obra/Correctivo, 2=Revisión/Mantenimiento, 3=Avería).
 - **`SATYA.SISTEMA_CUOTA` / `SATYA.CONTRATO_CUOTA`**: `IDCONTRATO`, `PRECIO_MES`, `DTO`, `UNIDADES`, `FCONTRATACION`, `ESTADO`. (Cuotas de mantenimiento contratadas).
 - **`SATYA.PARTE_MONTAJE`**: `IDPARTE_MONTAJE`, `IDORDEN_TRABAJO`, `FMONTAJE`, `ESTADO`.
 
