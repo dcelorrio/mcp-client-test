@@ -14,7 +14,3 @@ Este archivo actúa como índice global y contexto general del cliente MCP.
   - `.agents/memory/downstream/mcp-detnov/MEMORY.md`: Facturación y pedidos 2026 de Detnov Security.
   - `.agents/memory/downstream/mcp-aql/MEMORY.md`: Estado B2B de pedidos y facturación de AQL Protección.
   - `.agents/memory/downstream/mcp-ajax/MEMORY.md`: Espacios, hubs y dispositivos de Ajax Systems Security.
-
-
-
-
