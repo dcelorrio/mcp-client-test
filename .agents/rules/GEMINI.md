@@ -64,6 +64,7 @@ Incluir al final de cada turno:
 - **Métricas Globales:**
   - ⏱️ Tiempo Real Total (Wall-Clock)
   - ⏱️ Tiempo Neto Downstream (Tools/BBDD)
+  - 🌡️ Temperatura Utilizada (acorde a la categoría de la regla 7)
   - 📊 Estimación de Ventana de Contexto
 
 ## 7. Rigor y Temperatura por Categoría
