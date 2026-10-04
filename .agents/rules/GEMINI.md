@@ -60,12 +60,14 @@ Evaluar destino de cada dato:
 Incluir al final de cada turno:
 - **Símbolos:** 🟢 (ok), 🔴 (error), 🔵 (ventaja skill/memoria/regla).
 - **Tipos:** `[DISCOVERY]`, `[EXEC]`, `[CACHE/MEM]`, `[PERSIST]`, `[RETRY]`, `[ORCHEST]`.
-- **Formato:** `- <Símbolo> Ciclo N [<TIPO>] (~X.Xs real | ~Y.Ys tool): Descripción.`
+- **Formato:** `- <Símbolo> Ciclo N [<TIPO>] (~X.Xs real | ~Y.Ys tool) | 🤖 Modelo: <Nombre/Tier>: Descripción.`
 - **Métricas Globales:**
+  - 🤖 **Modelo Principal / Workers:** Modelo activo en UI (desplegable) y tiers de subagentes
   - ⏱️ Tiempo Real Total (Wall-Clock)
   - ⏱️ Tiempo Neto Downstream (Tools/BBDD)
   - 🌡️ Temperatura Utilizada (acorde a la categoría de la regla 7)
   - 📊 Estimación de Ventana de Contexto
+
 
 ## 7. Rigor y Temperatura por Categoría
 - **B2B (`ibd`, `saltoki`, `visiotech`, `casmar`, `detnov`, `aql`):** Temp ≈ 0.1. Determinismo literal, cero alucinación/redondeo en precios/SKUs.
@@ -78,3 +80,9 @@ Incluir al final de cada turno:
 - Orquestador lanza subagentes en paralelo con `invoke_subagent`.
 - Subagentes ejecutan de forma aislada consultando su `tools.json`.
 - Orquestador consolida datos y gestiona persistencia en `.agents/cache/`.
+
+## 9. Enrutamiento de Modelos y Latencia de Inferencia
+- **Sesión Principal (UI):** Priorizar **Gemini 3.8 Flash (Low)** para turnos operativos. Cero sobrecarga de thinking innecesario.
+- **Workers / Subagentes:** Fijar obligatoriamente `Model: 'flash_lite'` o `'flash'` en `invoke_subagent` para ejecuciones mecánicas contra el MCP Gateway (SQL Beta10/Planner, catálogos B2B, telemetría Ajax).
+- **Modelo Pro (3.1 Pro):** Restringido exclusivamente a tareas de diseño arquitectónico inicial, diagnóstico de bugs complejos en pipeline o refactorizaciones globales.
+

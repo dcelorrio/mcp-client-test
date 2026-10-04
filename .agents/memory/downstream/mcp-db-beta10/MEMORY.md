@@ -1,39 +1,45 @@
 ---
-updated_at: 2026-10-04T10:16:00Z
+updated_at: 2026-10-04T15:00:00Z
 source_downstream: mcp-db-beta10
 ---
 
 # Memoria Contextual MCP DB Beta10
 
 ## Esquemas de BBDD (`beta10`)
-- **`SATYA.EMPRESA`**: `IDEMPRESA`, `NOMBRE`
-  - *Empresas*: 1=SATYA, 4=INERTYA, 7=NAVYA, 8=INVARYA.
+- **Directorio de esquemas modulares**: `.agents/memory/downstream/mcp-db-beta10/schemas/*.json` (consultar bajo demanda: `FACTURACLI`, `LFACTURACLI`, `SISTEMA`, `SISTEMA_MANT`, `ORDEN_TRABAJO`, `TIEMPO_TRABAJADO`, `SISTEMA_CUOTA`).
+- **`SATYA.TAG` y `SATYA.TAG_X_TABLA`** (Sistema de etiquetas visuales de Beta10):
+  - `SATYA.TABLA`: `IDTABLA`, `CODIGO`, `DESCRIPCION` (`IDTABLA = 141` -> `ALBARANCLI`).
+  - `SATYA.TAG`: `IDTAG`, `IDTABLA`, `NOMBRE`, `ESTADO`.
+  - `SATYA.TAG_X_TABLA`: `IDTAG_X_TABLA`, `IDTAG`, `ID` (clave primaria del registro en la tabla enlazada), `ESTADO`.
+  - *Etiquetas comunes en albaranes (`IDTABLA = 141`)*: `SIN PEDIDO`, `OT PTE`, `ROBERTO`, `PNTE. ACLARAR FACTURACION`, `DAVID SAEZ`.
+- **`SATYA.ALBARANCLI`**: `IDALBARANCLI`, `IDCLIENTE`, `IDSERIE_ALBARANCLI`, `IDTALBARANCLI`, `FALBARANCLI`, `NALBARANCLI`, `ESTADO`, `OBSERVACIONES`, `NOTAS_INTERNAS`, `IDTMOTIVO_NOFACTURABLE`, `MOTIVO_NOFACTURABLE`, `IDORDEN_TRABAJO`, `IDSISTEMA`, `VALORAR`, etc.
+  - *Estados de `ALBARANCLI.ESTADO`*:
+    - `1`: Borrador / Pendiente de emitir.
+    - `2`: Pendiente de facturar (activo, con líneas valoradas/facturables no facturadas).
+    - `3`: Facturado (enlace en `LFACTURACLI.IDLALBARANCLI`).
+    - `4`: No facturable (con motivo en `IDTMOTIVO_NOFACTURABLE` o cerrado sin factura).
+    - `0`: Anulado.
+- **`SATYA.LALBARANCLI`**: `IDLALBARANCLI`, `IDALBARANCLI`, `IDARTICULO`, `CODIGO`, `DESCRIPCION`, `UNIDADES`, `PRECIO`, `DTO`, `IVA`, `IMPORTE`, `FACTURABLE`, `NETIQUETA`, `NSERIE`, `UBICACION`, `NUMZONA`, `IDTMOTIVO_NOFACTURABLE`.
+- **`SATYA.TMOTIVO_NOFACTURABLE`**: `IDTMOTIVO_NOFACTURABLE`, `DESCRIPCION`, `ESTADO`.
+  - Motivos oficiales: EN GARANTÍA, INCLUIDO EN MANTENIMIENTO, OTRO, POR CERTIFICACIÓN A ORIGEN, FACTURADO POR PRESUPUESTO, NO INSTALADO, DUPLICADO, TARIFA PLANA, ERROR MIGRACION, SISTEMA ERRONEO, BOLSA HORAS, FACTURADO COMO RT/RC, INCLUIDO EN CUOTA, ATENCIÓN COMERCIAL, PROP. CLIENTE.
+- **`SATYA.TALBARANCLI`**: `IDTALBARANCLI`, `DESCRIPCION` (1: Orden Trabajo, 2: Cuotas, 3: Venta directa).
+- **`SATYA.SERIE_ALBARANCLI`**: `IDSERIE_ALBARANCLI`, `DESCRIPCION`, `DESCRIPCIONCORTA`, `IDEMPRESA`.
+- **`SATYA.EMPRESA`**: `IDEMPRESA`, `NOMBRE` (1=SATYA, 4=INERTYA, 7=NAVYA, 8=INVARYA).
 - **`SATYA.FACTURACLI`**: `IDFACTURACLI`, `FFACTURA`, `NFACTURA`, `IDSERIE_FACTURACLI`, `ESTADO`, `IDCLIENTE`, etc.
 - **`SATYA.LFACTURACLI`**: `IDLFACTURACLI`, `IDFACTURACLI`, `IMPORTE`, etc.
-- **`SATYA.SERIE_FACTURACLI`**: `IDSERIE_FACTURACLI`, `IDEMPRESA`, `DESCRIPCION`
+- **`SATYA.SERIE_FACTURACLI`**: `IDSERIE_FACTURACLI`, `IDEMPRESA`, `DESCRIPCION`.
 - **`SATYA.FACTURAPRO`**: `IDFACTURAPRO`, `IDPROVEEDOR`, `FFACTURAPRO`, `FREGISTRO`, `NFACTURAPRO`, `NFAC_PROVEEDOR`, `IDSERIE_FACTURAPRO`, `IDEST_FACTURAPRO`, `RAZON_SOCIAL`, `CIF`, `BASE_IMPONIBLE`, `IVA`, `RECARGO`, `RETENCION`, `TOTAL`, `IMPORTE`.
 - **`SATYA.LFACTURAPRO`**: `IDLFACTURAPRO`, `IDFACTURAPRO`, `IDARTICULO`, `DESCRIPCION`, `UNIDADES`, `PRECIO`, `DTO`, `IVA`, `IMPORTE`.
-- **`SATYA.SERIE_FACTURAPRO`**: `IDSERIE_FACTURAPRO`, `IDEMPRESA`, `DESCRIPCION`, `DESC_CORTA`, `ANIO`.
+- **`SATYA.SERIE_FACTURAPRO`**: `IDSERIE_ALBARANPRO`, `IDEMPRESA`, `DESCRIPCION`, `DESC_CORTA`, `ANIO`.
 - **`SATYA.ARTICULO`**: `IDARTICULO`, `CODIGO`, `DESCRIPCION`, `PRECIOULTCOMPRA`, `FECHAULTCOMPRA`, `IDFABRICANTE`, `ESTADO`.
 - **`SATYA.TARIFA`**: `IDTARIFA`, `IDARTICULO`, `PRECIO`, `MARGEN`, `ESTADO`.
 - **`SATYA.PROVEEDOR`**: `IDPROVEEDOR`, `NOMBRE`, `NOMBRE_COMERCIAL`, `CIF`.
 - **`SATYA.FABRICANTE`**: `IDFABRICANTE`, `DESCRIPCION`.
-- **`SATYA.EMPLEADO`**: `IDEMPLEADO`, `NOMBRE_Y_APELLIDO`, `ESTADO`.
-  - *Técnicos clave*: 216=Andrés Méndez Fernández, 233=Víctor Tenas Jiménez.
-- **`SATYA.TIEMPO_TRABAJADO`**: `IDTIEMPO_TRABAJADO`, `IDPARTE_MONTAJE`, `IDEMPLEADO`, `FINICIO`, `FFIN`, `HORAS`, `ES_DESPLAZAMIENTO`, `ESTADO`. (Tabla oficial de imputación de horas de mano de obra y desplazamientos en partes de trabajo).
-- **`SATYA.ORDEN_TRABAJO`**: `IDORDEN_TRABAJO`, `NORDEN_TRABAJO`, `IDCLIENTE`, `IDSISTEMA`, `IDTACTUACION_SISTEMA`, `DURACION_ESTIMADA` (horas; en preventivos suele venir a 0 por defecto), `ESTADO`.
-- **`SATYA.ORDEN_TRABAJO_MANT`**: `IDORDEN_TRABAJO_MANT`, `IDORDEN_TRABAJO`, `IDSISTEMA_MANT`. (Tabla pivote vinculante entre la OT generada y las revisiones contratadas del sistema).
-- **`SATYA.SISTEMA_MANT`**: `IDSISTEMA_MANT`, `IDSISTEMA`, `IDTACTUACION`, `IDTSUBSIS`, `DURACION_ESTIMADA` (en minutos; tiempo teórico de referencia contractual), `ESTADO`.
-- **`SATYA.TACTUACION`**: `IDTACTUACION`, `DESCRIPCION`, `TIPO` (1=Instalación/Obra/Correctivo, 2=Revisión/Mantenimiento, 3=Avería).
-- **`SATYA.SISTEMA_CUOTA` / `SATYA.CONTRATO_CUOTA`**: `IDCONTRATO`, `PRECIO_MES`, `DTO`, `UNIDADES`, `FCONTRATACION`, `ESTADO`. (Cuotas de mantenimiento contratadas).
+- **`SATYA.EMPLEADO`**: `IDEMPLEADO`, `NOMBRE_Y_APELLIDO`, `ESTADO` (216=Andrés Méndez Fernández, 233=Víctor Tenas Jiménez).
+- **`SATYA.TIEMPO_TRABAJADO`**: `IDTIEMPO_TRABAJADO`, `IDPARTE_MONTAJE`, `IDEMPLEADO`, `FINICIO`, `FFIN`, `HORAS`, `ES_DESPLAZAMIENTO`, `ESTADO`.
+- **`SATYA.ORDEN_TRABAJO`**: `IDORDEN_TRABAJO`, `NORDEN_TRABAJO`, `IDCLIENTE`, `IDSISTEMA`, `IDTACTUACION_SISTEMA`, `DURACION_ESTIMADA`, `ESTADO`, `OBSERVACION`.
+- **`SATYA.ORDEN_TRABAJO_MANT`**: `IDORDEN_TRABAJO_MANT`, `IDORDEN_TRABAJO`, `IDSISTEMA_MANT`.
+- **`SATYA.SISTEMA_MANT`**: `IDSISTEMA_MANT`, `IDSISTEMA`, `IDTACTUACION`, `IDTSUBSIS`, `DURACION_ESTIMADA`, `ESTADO`.
+- **`SATYA.TACTUACION`**: `IDTACTUACION`, `DESCRIPCION`, `TIPO`.
+- **`SATYA.SISTEMA_CUOTA` / `SATYA.CONTRATO_CUOTA`**: `IDCONTRATO`, `PRECIO_MES`, `DTO`, `UNIDADES`, `FCONTRATACION`, `ESTADO`.
 - **`SATYA.PARTE_MONTAJE`**: `IDPARTE_MONTAJE`, `IDORDEN_TRABAJO`, `FMONTAJE`, `ESTADO`.
-
-## Packages Oficiales de Cálculo y Escritura (`SATYA`)
-- **Lectura total horas OT**: `SATYA.PKG_ORDEN_TRABAJO.TotalTiempoOrdenTrabajo(IDORDEN_TRABAJO)`
-- **Escritura oficial de tiempos teóricos preventivos**: `SATYA.PKG_SISTEMA_MAN.MAN_SISTEMA_MANT`
-
-## Particularidad de Contratos Cabecera vs Sistemas Técnicos (Cuota Cero)
-- **Modelado en Cuentas de Infraestructura** (`UTE MALEBU`, `COBRA / ENDESA`, `AYTO. MEDIANA`, `UTE AVE ENERGIA`):
-  - Existe un **Sistema Cabecera** (`2423.1 CONTRATO CABECERA...`, etc.) donde reside el contrato global y el 100% de la cuota en `SISTEMA_CUOTA` / `CONTRATO_CUOTA`.
-  - Existen múltiples **Sistemas Técnicos Hijos** (subestaciones, centros de transformación, túneles, edificios) donde `SISTEMA_CUOTA` es NULL o 0, pero tienen `SISTEMA_MANT.ACTIVAR = 1` y generan las OTs preventivas periódicas individuales.
-  - Para análisis de rentabilidad / cuota por OT: un `JOIN` directo `SISTEMA -> SISTEMA_CUOTA` devuelve cuota 0 €. Se requiere prorratear la cuota global del contrato/cliente entre las OTs o revisiones activas del periodo.
