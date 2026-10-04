@@ -1,6 +1,6 @@
 # Informe de Auditoría de Arquitectura MCP Client
 
-- **Fecha de Ejecución:** `2026-10-04T17:36:44.452444+00:00`
+- **Fecha de Ejecución:** `2026-10-04T20:16:45.303594+00:00`
 - **Puntuación de Salud:** `100.0%`
 - **Métricas:** 86 PASS | 0 WARN | 0 FAIL
 
@@ -92,5 +92,5 @@
 | 🟢 PASS | **MEMORIA** | Memoria mcp-saltoki/MEMORY.md libre de fugas de precios volátiles |
 | 🟢 PASS | **MEMORIA** | Frontmatter válido en mcp-visiotech/MEMORY.md |
 | 🟢 PASS | **MEMORIA** | Memoria mcp-visiotech/MEMORY.md libre de fugas de precios volátiles |
-| 🟢 PASS | **CACHÉ** | Catálogo cache/index.json cargado (22 entradas registradas) |
-| 🟢 PASS | **CACHÉ** | Auditoría de caché completada: 22 archivos (14 expirados por TTL) |
+| 🟢 PASS | **CACHÉ** | Catálogo cache/index.json cargado (23 entradas registradas) |
+| 🟢 PASS | **CACHÉ** | Auditoría de caché completada: 22 archivos (16 expirados por TTL) |

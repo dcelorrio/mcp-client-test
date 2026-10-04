@@ -86,3 +86,14 @@ Incluir al final de cada turno:
 - **Workers / Subagentes:** Fijar obligatoriamente `Model: 'flash_lite'` o `'flash'` en `invoke_subagent` para ejecuciones mecánicas contra el MCP Gateway (SQL Beta10/Planner, catálogos B2B, telemetría Ajax).
 - **Modelo Pro (3.1 Pro):** Restringido exclusivamente a tareas de diseño arquitectónico inicial, diagnóstico de bugs complejos en pipeline o refactorizaciones globales.
 
+## 10. Ciclo Asíncrono de Propuestas de Skills (Skill Proposal Loop)
+1. **Detección de Triggers de Valor:** Al resolver un reintento (`[ERR_RETRY]`), optimizar una ruta (`[CYCLE_OPT]`), resolver un desafío 2FA (`[AUTH_STATE]`) o descubrir sintaxis estricta de BBDD (`[DOMAIN_SYNTAX]`).
+2. **Deduplicación en 2 Capas:**
+   - **Local:** Verificar ausencia de la regla en `.agents/skills/downstream/<mcp>/SKILL.md` y `.agents/memory/downstream/<mcp>/MEMORY.md`.
+   - **Gateway:** Invocar `gateway_list_skill_proposals(provider="<mcp>", status="PENDING")` para descartar duplicados en cola.
+3. **Delegación Asíncrona (Cero Latencia Usuario):**
+   - Lanzar subagente worker en segundo plano: `invoke_subagent` con `Role: 'Skill Proposal Worker'`, `Model: 'flash_lite'`.
+   - Prompt del worker: Transmitir `provider`, `title`, `content_markdown` (regla terse) y `session_context`.
+   - El worker ejecuta `gateway_propose_skill_update` y finaliza de forma aislada sin demorar el turno del usuario.
+
+
