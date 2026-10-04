@@ -41,6 +41,10 @@ description: Guía de ruteo para PostgreSQL Planner (planner_pg) y reglas de an�
   WHERE start >= date_trunc('week', CURRENT_DATE)
     AND start < date_trunc('week', CURRENT_DATE) + INTERVAL '7 days'
   ```
+- **Estructuración de Parámetros**: Usar siempre el argumento `sql="..."` (nunca `query`), con `connection="planner_pg"` y parámetros en formato JSON válido.
+- **Prevención de Errores SQL**: No incluir `;` al final de la cadena SQL enviada a `db__run_query`. Usar casteo explícito a timestamp o UUID cuando corresponda (ej. `'2026-10-01'::timestamp`).
+
+
 
 ## 3. Análisis de Tiempos Teóricos y Margen (Planner & Beta10)
 
