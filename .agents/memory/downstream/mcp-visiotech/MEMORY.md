@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-10-03T19:12:00Z
+updated_at: 2026-10-04T19:30:00Z
 source_downstream: mcp-visiotech
 ---
 
@@ -17,19 +17,18 @@ source_downstream: mcp-visiotech
 - `visiotech__search_visiotech_products` opera contra el índice público Algolia: `sku`, `reference`, `brand`, `ean`, `discontinued`, `url`, `datasheet_url`.
 - **Fichas Técnicas PDF (S3)**: Formato directo `https://s3.eu-west-1.amazonaws.com/files.visiotech.es/files/pdf/<SKU>_ES.pdf`.
 
-## 3. Productos Clave Descubiertos
+## 3. Familias y Referencias Clave Descubiertas
 - **CCTV IP 4K (8 Megapixel):**
   - **Hikvision Domo:** `DS-2CD2183G2-LIS2U(2.8mm)` - Gama Pro AcuSense luz dual 30m.
   - **Hikvision Bullet:** `DS-2CD2683G2-LIZS2U/SRB(2.8-12mm)` - Gama Pro Varifocal luz dual/policial.
   - **Safire Smart Bullet:** `SF-IPB380A-8E1-NIGHTPRO` - AI-ISP Gama E1 8MP.
   - **Safire Smart Turret:** `SF-IPT020A-8E1-NIGHTPRO` - AI-ISP Gama E1 8MP.
-- **Intrusión AJAX (Descuento B2B ~55% sobre PVP):**
-  - **Central:** `AJ-HUB2PLUS-W` (PVP: 473,80 € | Neto: 213,21 €)
-  - **PIR Cámara:** `AJ-MOTIONCAM-HDR-W` (PVP: 174,79 € | Neto: 78,65 €)
-  - **PIR Cámara PhOD:** `AJ-MOTIONCAM-HDR-PHOD-W` (PVP: 195,60 € | Neto: 88,02 €)
-  - **PIR Volumétrico:** `AJ-MOTIONPROTECT-W` (PVP: 79,07 € | Neto: 35,58 €)
-  - **Magnético:** `AJ-DOORPROTECT-W` (PVP: 45,78 € | Neto: 20,60 €)
-  - **Teclado con Sirena:** `AJ-KEYPADCOMBI-W` (PVP: 141,50 € | Neto: 63,68 €)
+- **Intrusión AJAX (Condiciones comerciales: Descuento B2B ~55% sobre PVP):**
+  - Centrales: `AJ-HUB2PLUS-W`.
+  - PIR con Cámara: `AJ-MOTIONCAM-HDR-W`, `AJ-MOTIONCAM-HDR-PHOD-W`.
+  - Detección perimetral/interior: `AJ-MOTIONPROTECT-W`, `AJ-DOORPROTECT-W`.
+  - Interfaces y Teclados: `AJ-KEYPADCOMBI-W`.
+  - *(Nota: Para cotizaciones y precios puntuales con fecha y TTL, consultar `.agents/cache/downstream/mcp-visiotech/`)*.
 - **Detección de Incendio Óptica Convencional:**
-  - **DMTECH Óptico Convencional:** `DMT-D9000-SR-V2`
-  - **WizMart Óptico Convencional:** `NB-338-2-LED`
+  - **DMTECH Óptico Convencional:** `DMT-D9000-SR-V2`.
+  - **WizMart Óptico Convencional:** `NB-338-2-LED`.
