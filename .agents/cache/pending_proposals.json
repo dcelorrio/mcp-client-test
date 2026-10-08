@@ -1,0 +1,312 @@
+[
+  {
+    "id": "PROP-20261001-182116-visi",
+    "timestamp": "2026-10-01T18:21:16.561189+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: get_visiotech_account_profile -> list_visiotech_orders",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 4 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico y útil que no está ya explicado en el conocimiento vigente y no choca con ninguna regla de negocio existente."
+  },
+  {
+    "id": "PROP-20261001-151625-salt",
+    "timestamp": "2026-10-01T15:16:25.346739+00:00",
+    "provider": "saltoki",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en saltoki: search_saltoki_products -> get_saltoki_product",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico y útil que no está ya explicado en el conocimiento vigente."
+  },
+  {
+    "id": "PROP-20260930-175252-db_g",
+    "timestamp": "2026-09-30T17:52:52.983901+00:00",
+    "provider": "db_gateway",
+    "proposal_type": "NEW_RULE",
+    "title": "Mapeo de IDTABLA 141, Estados de Albarán y Etiquetas TAGS en Beta10",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Descubrimiento de mapeos IDTABLA=141 en albaranes, tags_x_tabla y estados de albarancli durante auditoria de albaranes pendientes de facturar."
+  },
+  {
+    "id": "PROP-20260930-083210-ajax",
+    "timestamp": "2026-09-30T08:32:10.504940+00:00",
+    "provider": "ajax",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en ajax: ajax_list_security_groups -> ajax_list_rooms",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 6 secuencias exitosas. Razón: La directriz proporciona un flujo de trabajo útil y no redundante que optimiza la interacción entre las herramientas ajax_list_security_groups y ajax_list_rooms."
+  },
+  {
+    "id": "PROP-20260929-221653-byde",
+    "timestamp": "2026-09-29T22:16:53.063842+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en bydemes: list_bydemes_delivery_notes -> run_query",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 4 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico y útil que no está cubierto por el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260927-002122-casm",
+    "timestamp": "2026-09-27T00:21:22.081234+00:00",
+    "provider": "casmar",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en casmar: list_casmar_invoices -> list_detnov_invoices",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y es útil para los agentes que utilizan el microservicio."
+  },
+  {
+    "id": "PROP-20260926-231912-syno",
+    "timestamp": "2026-09-26T23:19:12.452794+00:00",
+    "provider": "synology-qdrant",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en synology-qdrant: lexical_search -> semantic_search",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo útil y no está en contra de las reglas existentes."
+  },
+  {
+    "id": "PROP-20260926-221420-db",
+    "timestamp": "2026-09-26T22:14:20.870109+00:00",
+    "provider": "db",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Incluir SQL en parámetros para db__schema_information",
+    "status": "PENDING",
+    "similarity_warning": "Aviso: El título o término 'Incluir SQL en parámetros para db__schema_information' ya aparece en la skill actual de db.",
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta una nueva norma operativa útil que no está en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260926-180442-db",
+    "timestamp": "2026-09-26T18:04:42.931994+00:00",
+    "provider": "db",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Asegurar Parámetros SQL en Llamadas MCP",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta información operativa útil que no está ya explicada en el conocimiento vigente y no choca con ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260925-125337-visi",
+    "timestamp": "2026-09-25T12:53:37.551555+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Usar parámetro 'reference' en lugar de 'product_id'",
+    "status": "PENDING",
+    "similarity_warning": "Aviso: El título o término 'Usar parámetro 'reference' en lugar de 'product_id'' ya aparece en la skill actual de visiotech.",
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta información operativa útil que no está ya explicada en el conocimiento vigente y no choca con ninguna regla de negocio existente."
+  },
+  {
+    "id": "PROP-20260925-115006-db",
+    "timestamp": "2026-09-25T11:50:06.154131+00:00",
+    "provider": "db",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Evitar errores en llamadas a db__schema_information",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta una especificación clara y útil para el uso de db__schema_information, sin contradecir ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260925-002011-db",
+    "timestamp": "2026-09-25T00:20:11.549566+00:00",
+    "provider": "db",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Evitar errores en SQL de db__run_query",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta información operativa útil que no está ya explicada en el conocimiento vigente y no choca con ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260924-211216-db",
+    "timestamp": "2026-09-24T21:12:16.437867+00:00",
+    "provider": "db",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Evitar SQL Injection en db__run_query",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta información útil sobre seguridad y eficiencia en consultas SQL, sin contradecir ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260924-141324-detn",
+    "timestamp": "2026-09-24T14:13:24.773102+00:00",
+    "provider": "detnov",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en detnov: list_detnov_invoices -> list_ibd_invoices",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 6 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico y útil que no está ya explicado en el conocimiento vigente y no choca con ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260924-141206-orac",
+    "timestamp": "2026-09-24T14:12:06.378058+00:00",
+    "provider": "oracle",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Verificar Existencia de Oracle Skill antes de Llamada",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta una verificación útil que no está cubierta por el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260924-065252-orac",
+    "timestamp": "2026-09-24T06:52:52.723566+00:00",
+    "provider": "oracle",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Evitar llamadas SQL vacías en Oracle MCP",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta información operativa útil que no está ya explicada en el conocimiento vigente y no choca con ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260923-202427-db",
+    "timestamp": "2026-09-23T20:24:27.941612+00:00",
+    "provider": "db",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en db: get_skill -> run_query",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 7 secuencias exitosas. Razón: La directriz propuesta aporta un flujo operativo específico que no está explícitamente mencionado en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260923-202417-db",
+    "timestamp": "2026-09-23T20:24:17.563267+00:00",
+    "provider": "db",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en db: run_query -> get_skill",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 7 secuencias exitosas. Razón: La directriz aporta un nuevo flujo operativo útil que no está mencionado en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260923-191926-db",
+    "timestamp": "2026-09-23T19:19:26.652888+00:00",
+    "provider": "db",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Evitar errores en consultas SQL complejas",
+    "status": "PENDING",
+    "similarity_warning": "Aviso: El título o término 'Evitar errores en consultas SQL complejas' ya aparece en la skill actual de db.",
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz proporciona una regla útil y específica que no está en conflicto con las reglas existentes y aporta información operativa relevante."
+  },
+  {
+    "id": "PROP-20260923-163124-db_g",
+    "timestamp": "2026-09-23T16:31:24.588717+00:00",
+    "provider": "db_gateway",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en db_gateway: run_query -> schema_information",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz propuesta aporta un nuevo flujo operativo que no está explícitamente mencionado en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260923-162840-db",
+    "timestamp": "2026-09-23T16:28:40.797881+00:00",
+    "provider": "db",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Evitar errores de sintaxis en consultas SQL de MCP",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta una nueva regla útil que no está en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260923-152013-byde",
+    "timestamp": "2026-09-23T15:20:13.964786+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Usar parámetro 'reference' en lugar de 'product_id'",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta una nueva recomendación operativa que no está explícitamente mencionada en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260923-140759-ibd",
+    "timestamp": "2026-09-23T14:07:59.557818+00:00",
+    "provider": "ibd",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en ibd: search_ibd_products -> search_bydemes_products",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz aporta un flujo operativo útil y no redundante que no está descrito en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260923-140751-salt",
+    "timestamp": "2026-09-23T14:07:51.148055+00:00",
+    "provider": "saltoki",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en saltoki: list_saltoki_invoices -> list_saltoki_orders",
+    "status": "PENDING",
+    "similarity_warning": "Aviso: El título o término 'Flujo Recomendado en saltoki: list_saltoki_invoices -> list_saltoki_orders' ya aparece en la skill actual de saltoki.",
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y puede ser útil para optimizar el proceso."
+  },
+  {
+    "id": "PROP-20260923-140731-visi",
+    "timestamp": "2026-09-23T14:07:31.337096+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: get_visiotech_product -> search_bydemes_products",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 6 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico y útil que no está ya explicado en el conocimiento vigente y no choca con ninguna regla de negocio existente."
+  },
+  {
+    "id": "PROP-20260923-140720-byde",
+    "timestamp": "2026-09-23T14:07:20.916102+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en bydemes: get_bydemes_product -> search_visiotech_products",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 9 secuencias exitosas. Razón: La directriz aporta un nuevo flujo operativo útil que no está ya explicado en el conocimiento vigente y no choca con ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260923-140716-visi",
+    "timestamp": "2026-09-23T14:07:16.379620+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: search_visiotech_products -> get_visiotech_product",
+    "status": "PENDING",
+    "similarity_warning": "Aviso: El título o término 'Flujo Recomendado en visiotech: search_visiotech_products -> get_visiotech_product' ya aparece en la skill actual de visiotech.",
+    "session_context": "Minado proactivo de 14 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y no choca con ninguna regla de negocio existente."
+  },
+  {
+    "id": "PROP-20260923-140707-byde",
+    "timestamp": "2026-09-23T14:07:07.406901+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en bydemes: search_bydemes_products -> get_bydemes_product",
+    "status": "PENDING",
+    "similarity_warning": "Aviso: El título o término 'Flujo Recomendado en bydemes: search_bydemes_products -> get_bydemes_product' ya aparece en la skill actual de bydemes.",
+    "session_context": "Minado proactivo de 15 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico y útil que no está ya explicado en el conocimiento vigente."
+  },
+  {
+    "id": "PROP-20260923-140647-db_g",
+    "timestamp": "2026-09-23T14:06:47.859956+00:00",
+    "provider": "db_gateway",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Verificar Existencia de Herramienta MCP Antes de Llamada",
+    "status": "PENDING",
+    "similarity_warning": "Aviso: El título o término 'Verificar Existencia de Herramienta MCP Antes de Llamada' ya aparece en la skill actual de db_gateway.",
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz propuesta aporta una nueva práctica útil que no está explícitamente mencionada en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260923-140627-syno",
+    "timestamp": "2026-09-23T14:06:27.648733+00:00",
+    "provider": "synology-qdrant",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Autenticación fallida en Synology QDRant",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta información operativa útil sobre autenticación que no está cubierta por el conocimiento vigente y no choca con ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260923-140555-byde",
+    "timestamp": "2026-09-23T14:05:55.213846+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Verificar Existencia de Herramienta MCP Antes de Llamada",
+    "status": "PENDING",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta una práctica útil y no redundante que mejora la eficiencia operativa al verificar la existencia de la herramienta antes de su uso."
+  }
+]

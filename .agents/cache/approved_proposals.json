@@ -1,0 +1,582 @@
+[
+  {
+    "id": "PROP-20260923-212505-db",
+    "timestamp": "2026-09-23T21:25:05.633380+00:00",
+    "provider": "db",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Incluir SQL en parámetros para db__schema_information",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta información operativa útil que no está ya explicada en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260923-140542-db",
+    "timestamp": "2026-09-23T14:05:42.626178+00:00",
+    "provider": "db",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Evitar errores en consultas SQL complejas",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta información útil sobre cómo evitar errores en consultas SQL complejas, lo cual no está cubierto por el conocimiento vigente."
+  },
+  {
+    "id": "PROP-20260921-185521-syno",
+    "timestamp": "2026-09-21T18:55:21.807026+00:00",
+    "provider": "synology",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en synology: synology_search_files -> synology_get_file_info",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz proporciona un flujo operativo útil y no redundante para la recuperación de información de archivos en Synology."
+  },
+  {
+    "id": "PROP-20260921-175330-syno",
+    "timestamp": "2026-09-21T17:53:30.146124+00:00",
+    "provider": "synology-qdrant",
+    "proposal_type": "AUTO_APPROVED_SYNTAX",
+    "title": "[AUTO-FIX] Uso de synology-qdrant__lexical_search sin parámetro limit",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Auto-minado de traza 281. Razón: La directriz aporta conocimiento operativo útil y específico sobre el uso correcto de parámetros en 'synology-qdrant__lexical_search' sin contradecir ni duplicar información existente."
+  },
+  {
+    "id": "PROP-20260921-174740-syno",
+    "timestamp": "2026-09-21T17:47:40.341830+00:00",
+    "provider": "synology-qdrant",
+    "proposal_type": "AUTO_APPROVED_SYNTAX",
+    "title": "[AUTO-FIX] Evitar el parámetro limit en synology-qdrant search",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Auto-minado de traza 281. Razón: La directriz es novedosa y aporta una regla técnica crítica para evitar fallos de conexión en el microservicio synology-qdrant sin contradecir directrices existentes."
+  },
+  {
+    "id": "PROP-20260921-123202-syno",
+    "timestamp": "2026-09-21T12:32:02.657246+00:00",
+    "provider": "synology-qdrant",
+    "proposal_type": "AUTO_APPROVED_SYNTAX",
+    "title": "[AUTO-FIX] Evitar fallos de conexión en synology-qdrant__lexical_search",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Auto-minado de traza 281. Razón: La directriz proporciona información útil y operativa que no está cubierta por el conocimiento vigente y no choca con ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260921-091823-db_g",
+    "timestamp": "2026-09-21T09:18:23.807247+00:00",
+    "provider": "db_gateway",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en db_gateway: schema_information -> run_query",
+    "status": "APPROVED",
+    "similarity_warning": "Aviso: El título o término 'Flujo Recomendado en db_gateway: schema_information -> run_query' ya aparece en la skill actual de db_gateway.",
+    "session_context": "Minado proactivo de 6 secuencias exitosas. Razón: La directriz propuesta aporta un flujo operativo específico que no está explícitamente mencionado en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260921-091721-db_g",
+    "timestamp": "2026-09-21T09:17:21.405046+00:00",
+    "provider": "db_gateway",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Verificar Existencia de Herramienta MCP Antes de Llamada",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta una práctica útil y no redundante para verificar la existencia de herramientas antes de su uso, lo cual no choca con ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260921-081311-syno",
+    "timestamp": "2026-09-21T08:13:11.666515+00:00",
+    "provider": "synology-qdrant",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Evitar errores de conexión en synology-qdrant",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz proporciona información operativa útil y específica que no está cubierta por el conocimiento vigente."
+  },
+  {
+    "id": "PROP-20260921-080106-syno",
+    "timestamp": "2026-09-21T08:01:06.763331+00:00",
+    "provider": "synology-qdrant",
+    "proposal_type": "NEW_RULE",
+    "title": "Skill Operativa y Normativa Documental para Proyectos INDUTEC",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "No proporcionado"
+  },
+  {
+    "id": "PROP-20260921-035636-gmai",
+    "timestamp": "2026-09-21T03:56:36.569950+00:00",
+    "provider": "gmail",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Evitar llamadas fallidas a gmail__search_threads",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz proporciona una pauta operativa útil para evitar errores en la llamada a 'gmail__search_threads', y no hay directrices previas registradas."
+  },
+  {
+    "id": "PROP-20260920-204325-orac",
+    "timestamp": "2026-09-20T20:43:25.334740+00:00",
+    "provider": "oracle",
+    "proposal_type": "AUTO_APPROVED_SYNTAX",
+    "title": "[AUTO-FIX] Verificar Parámetros en Llamadas a Oracle Skill",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Auto-minado de traza 136. Razón: La directriz proporciona información operativa útil y no está en conflicto con ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260920-192716-syno",
+    "timestamp": "2026-09-20T19:27:16.481652+00:00",
+    "provider": "synology-qdrant",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Regla Obligatoria de Trazabilidad y Metadatos en Búsquedas Synology Qdrant",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "No proporcionado"
+  },
+  {
+    "id": "PROP-20260920-162336-syno",
+    "timestamp": "2026-09-20T16:23:36.977581+00:00",
+    "provider": "synology-qdrant",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Autenticación fallida en Synology QDRant",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz proporciona información útil y específica sobre autenticación y parámetros requeridos para Synology QDRant, sin contradecir ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260920-131834-visi",
+    "timestamp": "2026-09-20T13:18:34.259743+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Usar parámetro 'reference' en lugar de 'product_id'",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta información operativa útil que no está ya explicada en el conocimiento vigente y no choca con ninguna regla de negocio existente."
+  },
+  {
+    "id": "PROP-20260920-081021-salt",
+    "timestamp": "2026-09-20T08:10:21.101775+00:00",
+    "provider": "saltoki",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en saltoki: list_saltoki_invoices -> list_saltoki_orders",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está mencionado en el conocimiento vigente y es útil para optimizar el proceso de integración."
+  },
+  {
+    "id": "PROP-20260920-080919-orac",
+    "timestamp": "2026-09-20T08:09:19.434219+00:00",
+    "provider": "oracle",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Verificar Parámetros de Oracle Skill",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz proporciona información útil y específica sobre cómo evitar un error común al usar el microservicio oracle__get_oracle_skill."
+  },
+  {
+    "id": "PROP-20260920-080916-db_g",
+    "timestamp": "2026-09-20T08:09:16.475734+00:00",
+    "provider": "db_gateway",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Verificar Existencia de Herramienta MCP Antes de Llamada",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta una práctica útil y no redundante para verificar la existencia de herramientas antes de su uso, lo cual no choca con ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260920-070853-gmai",
+    "timestamp": "2026-09-20T07:08:53.102107+00:00",
+    "provider": "gmail",
+    "proposal_type": "AUTO_APPROVED_SYNTAX",
+    "title": "[AUTO-FIX] Evitar llamadas a herramientas no existentes en MCP",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Auto-minado de traza 218. Razón: La directriz aporta información operativa útil y no está en conflicto con ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260919-214305-db_g",
+    "timestamp": "2026-09-19T21:43:05.038133+00:00",
+    "provider": "db_gateway",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en db_gateway: schema_information -> run_query",
+    "status": "REJECTED",
+    "similarity_warning": "Aviso: El título o término 'Flujo Recomendado en db_gateway: schema_information -> run_query' ya aparece en la skill actual de db_gateway.",
+    "session_context": "Minado proactivo de 6 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está mencionado en el conocimiento vigente y es útil para optimizar la eficiencia en el uso de las herramientas db_gateway__db__schema_information y db_gateway__db__run_query."
+  },
+  {
+    "id": "PROP-20260919-214213-orac",
+    "timestamp": "2026-09-19T21:42:13.768459+00:00",
+    "provider": "oracle",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Evitar error 404 en oracle_sql_run",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz proporciona una pauta útil y específica para evitar errores 404 al usar oracle_sql_run, sin contradecir ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260919-214211-orac",
+    "timestamp": "2026-09-19T21:42:11.065149+00:00",
+    "provider": "oracle",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Verificar Existencia de Oracle Skill antes de Llamada",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz proporciona una guía útil y específica para evitar errores comunes al usar el microservicio, sin contradecir ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260919-194005-db_g",
+    "timestamp": "2026-09-19T19:40:05.965897+00:00",
+    "provider": "db_gateway",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en db_gateway: schema_information -> run_query",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 3 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está mencionado en el conocimiento vigente y es útil para optimizar la ejecución de herramientas en db_gateway."
+  },
+  {
+    "id": "PROP-20260919-193844-orac",
+    "timestamp": "2026-09-19T19:38:44.176391+00:00",
+    "provider": "oracle",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Evitar error 404 en oracle__oracle_sql_run",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz proporciona una pauta útil y específica para el uso del microservicio oracle__oracle_sql_run, evitando errores comunes."
+  },
+  {
+    "id": "PROP-20260919-193841-orac",
+    "timestamp": "2026-09-19T19:38:41.623867+00:00",
+    "provider": "oracle",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Verificar Existencia de Oracle Skill antes de Llamada",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz proporciona una práctica operativa útil y no está en contra de ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260919-193838-db_g",
+    "timestamp": "2026-09-19T19:38:38.316338+00:00",
+    "provider": "db_gateway",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Verificar Existencia de Herramienta MCP Antes de Llamada",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta una práctica útil y no redundante que mejora la consistencia operativa al verificar la existencia de herramientas antes de su uso."
+  },
+  {
+    "id": "PROP-20260919-183145-visi",
+    "timestamp": "2026-09-19T18:31:45.430028+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Uso de 'reference' en detalles de producto Visiotech",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta información operativa útil y específica que no está ya explicada en el conocimiento vigente."
+  },
+  {
+    "id": "PROP-20260919-151408-byde",
+    "timestamp": "2026-09-19T15:14:08.286149+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado: Enriquecimiento de productos ByDemes a Búsqueda IBD (bydemes__get_bydemes_product -> ibd__search_ibd_products)",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 4 secuencias exitosas. Razón: La directriz aporta un flujo operativo específico que no está explícitamente mencionado en el conocimiento vigente y es útil para los agentes que utilizan el microservicio."
+  },
+  {
+    "id": "PROP-20260919-132533-visi",
+    "timestamp": "2026-09-19T13:25:33.618014+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: get_visiotech_product -> search_visiotech_products",
+    "status": "ARCHIVED_DUPLICATE",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 3 secuencias exitosas. Razón: La directriz aporta un flujo operativo específico que mejora la eficiencia de las búsquedas y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260919-132328-byde",
+    "timestamp": "2026-09-19T13:23:28.885705+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en bydemes: get_bydemes_product -> search_ibd_products",
+    "status": "ARCHIVED_DUPLICATE",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 4 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y es útil para optimizar la integración entre las herramientas."
+  },
+  {
+    "id": "PROP-20260919-132308-visi",
+    "timestamp": "2026-09-19T13:23:08.595546+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: get_visiotech_product -> get_bydemes_product",
+    "status": "ARCHIVED_DUPLICATE",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz proporciona un flujo de trabajo específico que no está cubierto por el conocimiento vigente y es útil para los agentes que utilizan estos microservicios."
+  },
+  {
+    "id": "PROP-20260919-132219-visi",
+    "timestamp": "2026-09-19T13:22:19.298939+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: search_visiotech_products -> get_visiotech_product",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 12 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y es útil para los agentes que utilizan estos microservicios."
+  },
+  {
+    "id": "PROP-20260919-132207-visi",
+    "timestamp": "2026-09-19T13:22:07.552710+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Usar parámetro 'reference' en lugar de 'product_id'",
+    "status": "ARCHIVED_DUPLICATE",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta información útil y específica que no está en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260918-230725-visi",
+    "timestamp": "2026-09-18T23:07:25.334718+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: get_visiotech_product -> search_visiotech_products",
+    "status": "ARCHIVED_DUPLICATE",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 3 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y es útil para optimizar el proceso."
+  },
+  {
+    "id": "PROP-20260918-230716-byde",
+    "timestamp": "2026-09-18T23:07:16.695551+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en bydemes: get_bydemes_product -> get_visiotech_product",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 3 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y es útil para optimizar la integración entre las herramientas de bydemes y visiotech."
+  },
+  {
+    "id": "PROP-20260918-230712-byde",
+    "timestamp": "2026-09-18T23:07:12.125005+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en bydemes: get_bydemes_product -> search_ibd_products",
+    "status": "ARCHIVED_DUPLICATE",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 4 secuencias exitosas. Razón: La directriz aporta un flujo operativo específico que no está explícitamente mencionado en el conocimiento vigente y es útil para los usuarios del microservicio."
+  },
+  {
+    "id": "PROP-20260918-230702-ibd",
+    "timestamp": "2026-09-18T23:07:02.743204+00:00",
+    "provider": "ibd",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en ibd: search_ibd_products -> search_bydemes_products",
+    "status": "ARCHIVED_DUPLICATE",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz propuesta aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260918-230651-visi",
+    "timestamp": "2026-09-18T23:06:51.970562+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: get_visiotech_product -> get_bydemes_product",
+    "status": "ARCHIVED_DUPLICATE",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico y útil que no está cubierto por el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260918-230642-visi",
+    "timestamp": "2026-09-18T23:06:42.365102+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: get_visiotech_product -> search_bydemes_products",
+    "status": "ARCHIVED_DUPLICATE",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 6 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y es útil para optimizar la integración entre visiotech y bydemes."
+  },
+  {
+    "id": "PROP-20260918-230632-byde",
+    "timestamp": "2026-09-18T23:06:32.831612+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en bydemes: get_bydemes_product -> search_visiotech_products",
+    "status": "ARCHIVED_DUPLICATE",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 9 secuencias exitosas. Razón: La directriz proporciona un flujo de trabajo específico que no está cubierto por el conocimiento vigente y es útil para los agentes que utilizan estos microservicios."
+  },
+  {
+    "id": "PROP-20260918-220530-ibd",
+    "timestamp": "2026-09-18T22:05:30.166954+00:00",
+    "provider": "ibd",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en ibd: search_ibd_products -> search_bydemes_products",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz propuesta aporta un flujo de trabajo útil y específico que no está ya explicado en el conocimiento vigente, y no choca con ninguna regla de negocio existente."
+  },
+  {
+    "id": "PROP-20260918-220519-visi",
+    "timestamp": "2026-09-18T22:05:19.715082+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: get_visiotech_product -> get_bydemes_product",
+    "status": "ARCHIVED_DUPLICATE",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico y útil que no está ya explicado en el conocimiento vigente y no choca con ninguna regla de negocio existente."
+  },
+  {
+    "id": "PROP-20260918-210413-visi",
+    "timestamp": "2026-09-18T21:04:13.774900+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: get_visiotech_product -> search_visiotech_products",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 3 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y es útil para optimizar la integración."
+  },
+  {
+    "id": "PROP-20260918-210356-byde",
+    "timestamp": "2026-09-18T21:03:56.820079+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en bydemes: get_bydemes_product -> search_ibd_products",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 4 secuencias exitosas. Razón: La directriz aporta un flujo operativo específico que no está mencionado en el conocimiento vigente y no choca con ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260918-210342-visi",
+    "timestamp": "2026-09-18T21:03:42.288743+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: get_visiotech_product -> get_bydemes_product",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 5 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico y útil que no está ya explicado en el conocimiento vigente y no choca con ninguna regla de negocio existente."
+  },
+  {
+    "id": "PROP-20260918-210331-visi",
+    "timestamp": "2026-09-18T21:03:31.017293+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en visiotech: get_visiotech_product -> search_bydemes_products",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 6 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y puede ser útil para optimizar la integración entre las herramientas."
+  },
+  {
+    "id": "PROP-20260918-210320-byde",
+    "timestamp": "2026-09-18T21:03:20.406069+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en bydemes: get_bydemes_product -> search_visiotech_products",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 9 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y es útil para la integración entre bydemes y visiotech."
+  },
+  {
+    "id": "PROP-20260918-210308-byde",
+    "timestamp": "2026-09-18T21:03:08.500475+00:00",
+    "provider": "bydemes",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado en bydemes: search_bydemes_products -> get_bydemes_product",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 11 secuencias exitosas. Razón: La directriz aporta un flujo de trabajo específico que no está explícitamente mencionado en el conocimiento vigente y es útil para cualquier agente que use estos microservicios."
+  },
+  {
+    "id": "PROP-20260918-210250-visi",
+    "timestamp": "2026-09-18T21:02:50.492910+00:00",
+    "provider": "visiotech",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Usar 'reference' en lugar de 'product_id' para visiotech__get_visiotech_product_details",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "Minado de trazas en Postgres (7d). Razón: La directriz aporta información específica y útil que no está en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260918-194126-ibd",
+    "timestamp": "2026-09-18T19:41:26.580973+00:00",
+    "provider": "ibd",
+    "proposal_type": "AUTO_MINED_PATTERN",
+    "title": "Flujo Recomendado: Búsqueda Cruzada de Productos ibd -> bydemes",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "Minado proactivo de 3 secuencias exitosas. Razón: La directriz introduce una técnica novedosa y estructurada de búsqueda cruzada entre IBD y ByDemes que no está descrita en el conocimiento vigente y no contradice ninguna regla existente."
+  },
+  {
+    "id": "PROP-20260918-190355-byde",
+    "timestamp": "2026-09-18T19:03:55.757009+00:00",
+    "provider": "bydemes",
+    "proposal_type": "NEW_RULE",
+    "title": "Resolución de datasheets oficiales Dahua en CDN MaterialFile",
+    "status": "APPROVED",
+    "similarity_warning": null,
+    "session_context": "No proporcionado"
+  },
+  {
+    "id": "PROP-20260918-190352-salt",
+    "timestamp": "2026-09-18T19:03:52.938984+00:00",
+    "provider": "saltoki",
+    "proposal_type": "FULL_SKILL",
+    "title": "Guía de resolución de ficheros y PDFs técnicos en CDN Saltoki",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "No proporcionado"
+  },
+  {
+    "id": "PROP-20260918-190350-visi",
+    "timestamp": "2026-09-18T19:03:50.712088+00:00",
+    "provider": "visiotech",
+    "proposal_type": "FULL_SKILL",
+    "title": "Guía de consulta de catálogo Visiotech y resolución PDFs en Amazon S3",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "No proporcionado"
+  },
+  {
+    "id": "PROP-20260918-190347-ibd",
+    "timestamp": "2026-09-18T19:03:47.990072+00:00",
+    "provider": "ibd",
+    "proposal_type": "FULL_SKILL",
+    "title": "Guía de integración IBD Global Spain B2B, pedidos y albaranes",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "No proporcionado"
+  },
+  {
+    "id": "PROP-20260918-190345-detn",
+    "timestamp": "2026-09-18T19:03:45.706187+00:00",
+    "provider": "detnov",
+    "proposal_type": "FULL_SKILL",
+    "title": "Guía de integración Detnov Security PCI, catálogo, pedidos y datasheets",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "No proporcionado"
+  },
+  {
+    "id": "PROP-20260918-190343-byde",
+    "timestamp": "2026-09-18T19:03:43.418040+00:00",
+    "provider": "bydemes",
+    "proposal_type": "FULL_SKILL",
+    "title": "Guía de consulta de catálogo, precios, stock y datasheets en ByDemes",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "No proporcionado"
+  },
+  {
+    "id": "PROP-20260918-190340-orac",
+    "timestamp": "2026-09-18T19:03:40.955886+00:00",
+    "provider": "oracle",
+    "proposal_type": "FULL_SKILL",
+    "title": "Guía de gestión de presupuestos, líneas, escandallos y ficheros SMB en Oracle Beta10",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "No proporcionado"
+  },
+  {
+    "id": "PROP-20260918-190337-aql",
+    "timestamp": "2026-09-18T19:03:37.855508+00:00",
+    "provider": "aql",
+    "proposal_type": "FULL_SKILL",
+    "title": "Guía operativa AQL Protección PCI, catálogo, pedidos y datasheets",
+    "status": "REJECTED",
+    "similarity_warning": null,
+    "session_context": "No proporcionado"
+  }
+]

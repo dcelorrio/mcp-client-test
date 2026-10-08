@@ -1,0 +1,88 @@
+{
+  "fecha_estudio": "2026-10-05T09:33:47.184Z",
+  "periodo": "2026 (2026-01-01 a fecha actual)",
+  "actuacion_analizada": "REVISION REMOTA SEGURIDAD (IDTACTUACION_SISTEMA IN 136, 137, 139, 140)",
+  "totales": {
+    "calendarizados_totales": 769,
+    "cerradas_en_beta10": 624,
+    "pendientes_sin_cerrar": 145,
+    "desglose_cerradas": {
+      "efectivamente_realizadas_ok": 141,
+      "cerradas_administrativamente_no_realizadas": 483,
+      "porcentaje_realizadas_sobre_calendarizadas": "18.33%",
+      "porcentaje_realizadas_sobre_cerradas": "22.60%"
+    }
+  },
+  "desglose_mensual": [
+    {
+      "mes": "2026-01",
+      "total_planificado": 82,
+      "realizadas_ok": 19,
+      "no_realizadas_cliente": 63,
+      "pendientes": 0
+    },
+    {
+      "mes": "2026-02",
+      "total_planificado": 70,
+      "realizadas_ok": 19,
+      "no_realizadas_cliente": 51,
+      "pendientes": 0
+    },
+    {
+      "mes": "2026-03",
+      "total_planificado": 81,
+      "realizadas_ok": 21,
+      "no_realizadas_cliente": 59,
+      "pendientes": 1
+    },
+    {
+      "mes": "2026-04",
+      "total_planificado": 81,
+      "realizadas_ok": 19,
+      "no_realizadas_cliente": 62,
+      "pendientes": 0
+    },
+    {
+      "mes": "2026-05",
+      "total_planificado": 59,
+      "realizadas_ok": 8,
+      "no_realizadas_cliente": 51,
+      "pendientes": 0
+    },
+    {
+      "mes": "2026-06",
+      "total_planificado": 74,
+      "realizadas_ok": 7,
+      "no_realizadas_cliente": 67,
+      "pendientes": 0
+    },
+    {
+      "mes": "2026-07",
+      "total_planificado": 76,
+      "realizadas_ok": 17,
+      "no_realizadas_cliente": 59,
+      "pendientes": 0
+    },
+    {
+      "mes": "2026-08",
+      "total_planificado": 84,
+      "realizadas_ok": 10,
+      "no_realizadas_cliente": 73,
+      "pendientes": 1
+    },
+    {
+      "mes": "2026-09",
+      "total_planificado": 91,
+      "realizadas_ok": 17,
+      "no_realizadas_cliente": 0,
+      "pendientes": 74
+    },
+    {
+      "mes": "2026-10",
+      "total_planificado": 71,
+      "realizadas_ok": 2,
+      "no_realizadas_cliente": 0,
+      "pendientes": 69
+    }
+  ]
+}

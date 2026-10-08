@@ -139,6 +139,18 @@
       "cached_at": "2026-10-04T19:36:44.000Z",
       "ttl_hours": 24,
       "size_bytes": 8500
+    },
+    "estudio_mantenimientos_desdoblados": {
+      "file": "downstream/mcp-db-beta10/estudio_mantenimientos_desdoblados.json",
+      "cached_at": "2026-10-05T08:20:10.501Z",
+      "ttl_hours": 48,
+      "size_bytes": 146000
+    },
+    "mntos_remotos_seguridad_2026": {
+      "file": "downstream/mcp-db-beta10/mntos_remotos_seguridad_2026.json",
+      "cached_at": "2026-10-05T09:33:47.192Z",
+      "ttl_hours": 24,
+      "size_bytes": 2111
     }
   }
 }
